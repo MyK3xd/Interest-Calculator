@@ -1,4 +1,8 @@
 import streamlit as st
 
-pg = st.navigation([st.Page("main.py", title="Simple Interest Calculator"), st.Page("page_2.py")])
+pg = st.navigation([
+    st.Page("pages/simple_interest.py", title="Simple Interest Calculator"),
+    st.Page("pages/compound_interest.py", title="Compound Interest Calculator")
+])
+
 pg.run()
