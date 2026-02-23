@@ -30,7 +30,19 @@ def simple_interest_calculator():
 
     st.button("Reset", on_click=reset_inputs)
 
-#------------------- Main App -------------------    
+def compound_interest_calculator():
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        com_principal = st.number_input("Principal", key="principal", step=1.0)
+
+    with col2:
+        com_rate = st.number_input("Rate (%)", key="rate", step=0.1)
+
+    with col3:
+        com_time = st.number_input("Time (Years)", key="time", step=0.1)
+    
+#-------------------------------------- Main App --------------------------------------    
 
 st.title("Interest Calculator")
 
